@@ -8,10 +8,10 @@ class NotVaccinatedError(VaccineError):
 
 
 class OutdatedVaccineError(VaccineError):
-    def __init__(self, name: str) -> None:
+    def __init__(self, name: str = "OutdatedVaccineError") -> None:
         super().__init__(name)
 
 
 class NotWearingMaskError(Exception):
-    def __init__(self, name: str) -> None:
+    def __init__(self, name: str = "NotWearingMaskError") -> None:
         super().__init__(name)
